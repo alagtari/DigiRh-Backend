@@ -1,0 +1,12 @@
+/Users/alagtari/RiderProjects/DigiRh/src/BuildingBlocks/BuildingBlocks/bin/Debug/net8.0/BuildingBlocks.deps.json
+/Users/alagtari/RiderProjects/DigiRh/src/BuildingBlocks/BuildingBlocks/bin/Debug/net8.0/BuildingBlocks.dll
+/Users/alagtari/RiderProjects/DigiRh/src/BuildingBlocks/BuildingBlocks/bin/Debug/net8.0/BuildingBlocks.pdb
+/Users/alagtari/RiderProjects/DigiRh/src/BuildingBlocks/BuildingBlocks/obj/Debug/net8.0/BuildingBlocks.csproj.AssemblyReference.cache
+/Users/alagtari/RiderProjects/DigiRh/src/BuildingBlocks/BuildingBlocks/obj/Debug/net8.0/BuildingBlocks.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alagtari/RiderProjects/DigiRh/src/BuildingBlocks/BuildingBlocks/obj/Debug/net8.0/BuildingBlocks.AssemblyInfoInputs.cache
+/Users/alagtari/RiderProjects/DigiRh/src/BuildingBlocks/BuildingBlocks/obj/Debug/net8.0/BuildingBlocks.AssemblyInfo.cs
+/Users/alagtari/RiderProjects/DigiRh/src/BuildingBlocks/BuildingBlocks/obj/Debug/net8.0/BuildingBlocks.csproj.CoreCompileInputs.cache
+/Users/alagtari/RiderProjects/DigiRh/src/BuildingBlocks/BuildingBlocks/obj/Debug/net8.0/BuildingBlocks.dll
+/Users/alagtari/RiderProjects/DigiRh/src/BuildingBlocks/BuildingBlocks/obj/Debug/net8.0/refint/BuildingBlocks.dll
+/Users/alagtari/RiderProjects/DigiRh/src/BuildingBlocks/BuildingBlocks/obj/Debug/net8.0/BuildingBlocks.pdb
+/Users/alagtari/RiderProjects/DigiRh/src/BuildingBlocks/BuildingBlocks/obj/Debug/net8.0/ref/BuildingBlocks.dll

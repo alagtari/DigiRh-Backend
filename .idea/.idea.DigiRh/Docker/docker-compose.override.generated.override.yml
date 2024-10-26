@@ -1,0 +1,111 @@
+# This is a generated file. Not intended for manual editing.
+version: "3.4"
+services:
+  auth.api:
+    build:
+      context: "/Users/alagtari/RiderProjects/DigiRh/docker-compose"
+      dockerfile: "../src/Services/Auth/Auth.API/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Auth.API.dll"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "auth.api:dev"
+    ports: []
+    volumes:
+    - "/Users/alagtari/.nuget/packages:/home/app/.nuget/packages"
+    - "/Users/alagtari/RiderProjects/DigiRh/src/Services/Auth/Auth.API:/app:rw"
+    - "/Users/alagtari/RiderProjects/DigiRh:/src:rw"
+    working_dir: "/app"
+  compte.api:
+    build:
+      context: "/Users/alagtari/RiderProjects/DigiRh/docker-compose"
+      dockerfile: "../src/Services/Compte/Compte.API/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Compte.Api.dll"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "compte.api:dev"
+    ports: []
+    volumes:
+    - "/Users/alagtari/.nuget/packages:/home/app/.nuget/packages"
+    - "/Users/alagtari/RiderProjects/DigiRh/src/Services/Compte/Compte.Api:/app:rw"
+    - "/Users/alagtari/RiderProjects/DigiRh:/src:rw"
+    working_dir: "/app"
+  conge.api:
+    build:
+      context: "/Users/alagtari/RiderProjects/DigiRh/docker-compose"
+      dockerfile: "../src/Services/Conge/Conge.API/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Conge.API.dll"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "conge.api:dev"
+    ports: []
+    volumes:
+    - "/Users/alagtari/.nuget/packages:/home/app/.nuget/packages"
+    - "/Users/alagtari/RiderProjects/DigiRh/src/Services/Conge/Conge.API:/app:rw"
+    - "/Users/alagtari/RiderProjects/DigiRh:/src:rw"
+    working_dir: "/app"
+  finance.api:
+    build:
+      context: "/Users/alagtari/RiderProjects/DigiRh/docker-compose"
+      dockerfile: "../src/Services/Finance/Finance.API/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Finance.Api.dll"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "finance.api:dev"
+    ports: []
+    volumes:
+    - "/Users/alagtari/.nuget/packages:/home/app/.nuget/packages"
+    - "/Users/alagtari/RiderProjects/DigiRh/src/Services/Finance/Finance.Api:/app:rw"
+    - "/Users/alagtari/RiderProjects/DigiRh:/src:rw"
+    working_dir: "/app"
+  personnel.api:
+    build:
+      context: "/Users/alagtari/RiderProjects/DigiRh/docker-compose"
+      dockerfile: "../src/Services/Personnel/Personnel.Api/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Personnel.Api.dll"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "personnel.api:dev"
+    ports: []
+    volumes:
+    - "/Users/alagtari/.nuget/packages:/home/app/.nuget/packages"
+    - "/Users/alagtari/RiderProjects/DigiRh/src/Services/Personnel/Personnel.Api:/app:rw"
+    - "/Users/alagtari/RiderProjects/DigiRh:/src:rw"
+    working_dir: "/app"
+  yarpapigateway:
+    build:
+      context: "/Users/alagtari/RiderProjects/DigiRh/docker-compose"
+      dockerfile: "../src/ApiGateway/YarpApiGateway/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/YarpApiGateway.dll"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "yarpapigateway:dev"
+    ports: []
+    volumes:
+    - "/Users/alagtari/.nuget/packages:/home/app/.nuget/packages"
+    - "/Users/alagtari/RiderProjects/DigiRh/src/ApiGateway/YarpApiGateway:/app:rw"
+    - "/Users/alagtari/RiderProjects/DigiRh:/src:rw"
+    working_dir: "/app"

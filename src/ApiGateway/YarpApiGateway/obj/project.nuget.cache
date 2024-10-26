@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "OF47dScC/bJgMJePar9K7BfLeQHcy1Pgd+0iZED5nbcinOA8z/KomT4tmXb/fOHhGs7cQvCdR0wGv86eMheBRA==",
+  "success": true,
+  "projectFilePath": "/Users/alagtari/RiderProjects/DigiRh/src/ApiGateway/YarpApiGateway/YarpApiGateway.csproj",
+  "expectedPackageFiles": [
+    "/Users/alagtari/.nuget/packages/microsoft.visualstudio.azure.containers.tools.targets/1.19.5/microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
+    "/Users/alagtari/.nuget/packages/system.io.hashing/7.0.0/system.io.hashing.7.0.0.nupkg.sha512",
+    "/Users/alagtari/.nuget/packages/yarp.reverseproxy/2.1.0/yarp.reverseproxy.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,62 @@
+﻿services:
+  conge.api:
+    image: conge.api
+    build:
+      context: .
+      dockerfile: ../src/Services/Conge/Conge.API/Dockerfile
+
+  auth.api:
+    image: auth.api
+    build:
+      context: .
+      dockerfile: ../src/Services/Auth/Auth.API/Dockerfile
+
+  finance.api:
+    image: finance.api
+    build:
+      context: .
+      dockerfile: ../src/Services/Finance/Finance.API/Dockerfile
+
+  compte.api:
+    image: compte.api
+    build:
+      context: .
+      dockerfile: ../src/Services/Compte/Compte.API/Dockerfile
+  
+  personnel.api:
+    image: personnel.api
+    build:
+      context: .
+      dockerfile: ../src/Services/Personnel/Personnel.Api/Dockerfile
+  
+  
+  yarpapigateway:
+    image: ${DOCKER_REGISTRY-}yarpapigateway
+    build:
+      context: .
+      dockerfile: ../src/ApiGateway/YarpApiGateway/Dockerfile
+  
+  
+  #  congedb:
+  #    image: mcr.microsoft.com/mssql/server
+  #
+  #  authdb:
+  #    image: mcr.microsoft.com/mssql/server
+  #  
+  #  financedb:
+  #    image: mcr.microsoft.com/mssql/server
+  #  
+  #  comptedb:
+  #    image: mcr.microsoft.com/mssql/server
+  #  
+  #  personneldb:
+  #    image: mcr.microsoft.com/mssql/server
+  #  
+  #  transactiondb:
+  #    image: mcr.microsoft.com/mssql/server
+  
+  appdb:
+    image: mcr.microsoft.com/mssql/server
+
+  messagebroker:
+    image: rabbitmq:management

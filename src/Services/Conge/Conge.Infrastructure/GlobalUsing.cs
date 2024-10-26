@@ -1,0 +1,10 @@
+global using Conge.Domain.Models;
+global using Conge.Domain.Abstractions;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.ChangeTracking;
+global using Microsoft.EntityFrameworkCore.Diagnostics;
+global using System.Reflection;
+global using Conge.Application.Data;
+global using Conge.Domain.Enums;
+global using Conge.Domain.ValueObjects;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;

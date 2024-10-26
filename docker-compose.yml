@@ -1,0 +1,37 @@
+﻿services:
+  yarpapigateway:
+    image: yarpapigateway
+    build:
+      context: .
+      dockerfile: ApiGateway/YarpApiGateway/Dockerfile
+
+  finance.api:
+    image: finance.api
+    build:
+      context: .
+      dockerfile: src/Services/Finance/Finance.Api/Dockerfile
+
+  comptes.aa:
+    image: comptes.aa
+    build:
+      context: .
+      dockerfile: Comptes.AA/Dockerfile
+
+  compte.api:
+    image: compte.api
+    build:
+      context: .
+      dockerfile: src/Services/Compte/Compte.Api/Dockerfile
+
+  personnel.api:
+    image: personnel.api
+    build:
+      context: .
+      dockerfile: src/Services/Personnel/Personnel.Api/Dockerfile
+      
+
+  transaction.api:
+    image: transaction.api
+    build:
+      context: .
+      dockerfile: src/Services/Transaction/Transaction.Api/Dockerfile

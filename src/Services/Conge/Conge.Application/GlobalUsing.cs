@@ -1,0 +1,11 @@
+global using BuildingBlocks.Exceptions;
+global using BuildingBlocks.CQRS;
+global using FluentValidation;
+global using Conge.Application.Dtos;
+global using Conge.Application.Data;
+global using Conge.Application.Extensions;
+global using Conge.Domain.Events;
+global using MediatR;
+global using MassTransit;
+global using Microsoft.FeatureManagement;
+global using Conge.Domain.Enums;

@@ -1,0 +1,154 @@
+﻿version: '3.4'
+
+services:
+  appdb:
+    container_name: appdb
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=SwN12345678
+    restart: always
+    ports:
+      - "1433:1433"
+        
+#  congedb:
+#    container_name: congedb
+#    environment:
+#      - ACCEPT_EULA=Y
+#      - SA_PASSWORD=SwN12345678
+#    restart: always
+#    ports:
+#      - "1433:1433"
+#
+#  authdb:
+#    container_name: authdb
+#    environment:
+#      - ACCEPT_EULA=Y
+#      - SA_PASSWORD=SwN12345678
+#    restart: always
+#    ports:
+#      - "1434:1433"
+#
+#  financedb:
+#    container_name: financedb
+#    environment:
+#      - ACCEPT_EULA=Y
+#      - SA_PASSWORD=SwN12345678
+#    restart: always
+#    ports:
+#      - "1435:1433"
+#
+#  comptedb:
+#    container_name: comptedb
+#    environment:
+#      - ACCEPT_EULA=Y
+#      - SA_PASSWORD=SwN12345678
+#    restart: always
+#    ports:
+#      - "1436:1433"
+#  
+#  personneldb:
+#    container_name: personneldb
+#    environment:
+#      - ACCEPT_EULA=Y
+#      - SA_PASSWORD=SwN12345678
+#    restart: always
+#    ports:
+#      - "1437:1433"
+#  
+#  transactiondb:
+#    container_name: transactiondb
+#    environment:
+#      - ACCEPT_EULA=Y
+#      - SA_PASSWORD=SwN12345678
+#    restart: always
+#    ports:
+#      - "1438:1433"
+  
+  conge.api:
+    restart: always
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ConnectionStrings__Database=Server=appdb;Database=CongeDb;User Id=sa;Password=SwN12345678;Encrypt=False;TrustServerCertificate=True
+      - MessageBroker__Host=amqp://ecommerce-mq:5672
+      - MessageBroker__UserName=guest
+      - MessageBroker__Password=guest
+    depends_on:
+      - appdb
+      - messagebroker
+    ports:
+      - "6001:8080"
+
+  auth.api:
+    restart: always
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ConnectionStrings__Database=Server=appdb;Database=AuthDb;User Id=sa;Password=SwN12345678;Encrypt=False;TrustServerCertificate=True
+
+    depends_on:
+      - appdb
+    ports:
+      - "6002:8080"
+
+  finance.api:
+    restart: always
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ConnectionStrings__Database=Server=appdb;Database=FinanceDb;User Id=sa;Password=SwN12345678;Encrypt=False;TrustServerCertificate=True
+
+    depends_on:
+      - appdb
+    ports:
+      - "6003:8080"
+
+  compte.api:
+    restart: always
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ConnectionStrings__Database=Server=appdb;Database=CompteDb;User Id=sa;Password=SwN12345678;Encrypt=False;TrustServerCertificate=True
+
+    depends_on:
+      - appdb
+    ports:
+      - "6004:8080"
+  
+  personnel.api:
+    restart: always
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ConnectionStrings__Database=Server=appdb;Database=PersonnelDb;User Id=sa;Password=SwN12345678;Encrypt=False;TrustServerCertificate=True
+      - MessageBroker__Host=amqp://ecommerce-mq:5672
+      - MessageBroker__UserName=guest
+      - MessageBroker__Password=guest
+    depends_on:
+      - appdb
+      - messagebroker
+    ports:
+      - "6005:8080"
+
+  
+  yarpapigateway:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - AuthSettings__AuthServiceUrl=http://auth.api:8080/validate
+    depends_on:
+      - auth.api
+      - conge.api
+    ports:
+      - "6000:8080"
+
+  messagebroker:
+    container_name: messagebroker
+    hostname: ecommerce-mq
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    restart: always
+    ports:
+      - "5672:5672"
+      - "15672:15672"

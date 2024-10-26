@@ -1,0 +1,10 @@
+global using Auth.API.Models;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Carter;
+global using Mapster;
+global using MediatR;
+global using Auth.API.Data;
+global using Auth.API.Dtos;
+global using Auth.API.Exceptions;
+global using BuildingBlocks.CQRS;

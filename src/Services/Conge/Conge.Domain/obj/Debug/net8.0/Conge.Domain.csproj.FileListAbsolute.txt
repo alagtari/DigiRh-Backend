@@ -1,0 +1,15 @@
+/Users/alagtari/RiderProjects/DigiRh/src/Services/Conge/Conge.Domain/bin/Debug/net8.0/Conge.Domain.deps.json
+/Users/alagtari/RiderProjects/DigiRh/src/Services/Conge/Conge.Domain/bin/Debug/net8.0/Conge.Domain.dll
+/Users/alagtari/RiderProjects/DigiRh/src/Services/Conge/Conge.Domain/bin/Debug/net8.0/Conge.Domain.pdb
+/Users/alagtari/RiderProjects/DigiRh/src/Services/Conge/Conge.Domain/bin/Debug/net8.0/BuildingBlocks.dll
+/Users/alagtari/RiderProjects/DigiRh/src/Services/Conge/Conge.Domain/bin/Debug/net8.0/BuildingBlocks.pdb
+/Users/alagtari/RiderProjects/DigiRh/src/Services/Conge/Conge.Domain/obj/Debug/net8.0/Conge.Domain.csproj.AssemblyReference.cache
+/Users/alagtari/RiderProjects/DigiRh/src/Services/Conge/Conge.Domain/obj/Debug/net8.0/Conge.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alagtari/RiderProjects/DigiRh/src/Services/Conge/Conge.Domain/obj/Debug/net8.0/Conge.Domain.AssemblyInfoInputs.cache
+/Users/alagtari/RiderProjects/DigiRh/src/Services/Conge/Conge.Domain/obj/Debug/net8.0/Conge.Domain.AssemblyInfo.cs
+/Users/alagtari/RiderProjects/DigiRh/src/Services/Conge/Conge.Domain/obj/Debug/net8.0/Conge.Domain.csproj.CoreCompileInputs.cache
+/Users/alagtari/RiderProjects/DigiRh/src/Services/Conge/Conge.Domain/obj/Debug/net8.0/Conge.Do.54C2A734.Up2Date
+/Users/alagtari/RiderProjects/DigiRh/src/Services/Conge/Conge.Domain/obj/Debug/net8.0/Conge.Domain.dll
+/Users/alagtari/RiderProjects/DigiRh/src/Services/Conge/Conge.Domain/obj/Debug/net8.0/refint/Conge.Domain.dll
+/Users/alagtari/RiderProjects/DigiRh/src/Services/Conge/Conge.Domain/obj/Debug/net8.0/Conge.Domain.pdb
+/Users/alagtari/RiderProjects/DigiRh/src/Services/Conge/Conge.Domain/obj/Debug/net8.0/ref/Conge.Domain.dll
